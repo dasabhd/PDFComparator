@@ -5,7 +5,10 @@
  */
 package com.main;
 
+import java.io.File;
+
 import javax.swing.ImageIcon;
+import javax.swing.JFileChooser;
 
 /**
  *
@@ -254,6 +257,15 @@ public class OneToMany extends javax.swing.JFrame {
 
     private void Browse1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Browse1ActionPerformed
         // TODO add your handling code here:
+    	JFileChooser chooser = new JFileChooser("C:\\");
+    	chooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+    	int response = chooser.showOpenDialog(null);
+    	
+    	if(response==JFileChooser.APPROVE_OPTION) {
+    		File file = chooser.getSelectedFile();
+    		String fileID = file.getAbsolutePath();
+    		basePDF.setText(fileID);
+    	}
     }//GEN-LAST:event_Browse1ActionPerformed
 
     private void testPDFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_testPDFActionPerformed
@@ -270,6 +282,7 @@ public class OneToMany extends javax.swing.JFrame {
 
     private void Browse2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Browse2ActionPerformed
         // TODO add your handling code here:
+    	
     }//GEN-LAST:event_Browse2ActionPerformed
 
     private void Browse3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Browse3ActionPerformed
