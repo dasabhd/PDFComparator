@@ -348,7 +348,7 @@ public class OneToOne extends javax.swing.JFrame {
     private void Browse3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Browse3ActionPerformed
         // TODO add your handling code here:
     	JFileChooser chooser = new JFileChooser("C:\\");
-    	chooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+    	chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
     	int response = chooser.showOpenDialog(null);
     	
     	if(response==JFileChooser.APPROVE_OPTION) {
@@ -361,7 +361,7 @@ public class OneToOne extends javax.swing.JFrame {
     private void Browse4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Browse4ActionPerformed
         // TODO add your handling code here:
     	JFileChooser chooser = new JFileChooser("C:\\");
-    	chooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+    	chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
     	int response = chooser.showOpenDialog(null);
     	
     	if(response==JFileChooser.APPROVE_OPTION) {
