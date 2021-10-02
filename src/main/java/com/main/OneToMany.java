@@ -282,15 +282,42 @@ public class OneToMany extends javax.swing.JFrame {
 
     private void Browse2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Browse2ActionPerformed
         // TODO add your handling code here:
+    	JFileChooser chooser = new JFileChooser("C:\\");
+    	chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+    	int response = chooser.showOpenDialog(null);
+    	
+    	if(response==JFileChooser.APPROVE_OPTION) {
+    		File file = chooser.getSelectedFile();
+    		String fileID = file.getAbsolutePath();
+    		testPDF.setText(fileID);
+    	}
     	
     }//GEN-LAST:event_Browse2ActionPerformed
 
     private void Browse3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Browse3ActionPerformed
         // TODO add your handling code here:
+    	JFileChooser chooser = new JFileChooser("C:\\");
+    	chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+    	int response = chooser.showOpenDialog(null);
+    	
+    	if(response==JFileChooser.APPROVE_OPTION) {
+    		File file = chooser.getSelectedFile();
+    		String fileID = file.getAbsolutePath();
+    		MismatchPDF.setText(fileID);
+    	}
     }//GEN-LAST:event_Browse3ActionPerformed
 
     private void Browse4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Browse4ActionPerformed
         // TODO add your handling code here:
+    	JFileChooser chooser = new JFileChooser("C:\\");
+    	chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+    	int response = chooser.showOpenDialog(null);
+    	
+    	if(response==JFileChooser.APPROVE_OPTION) {
+    		File file = chooser.getSelectedFile();
+    		String fileID = file.getAbsolutePath();
+    		MatchedPDF.setText(fileID);
+    	}
     }//GEN-LAST:event_Browse4ActionPerformed
 
     private void CompareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CompareActionPerformed
