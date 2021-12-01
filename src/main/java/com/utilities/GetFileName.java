@@ -1,7 +1,16 @@
 package com.utilities;
 
+/**
+ * The type Get file name.
+ */
 public class GetFileName {
 
+	/**
+	 * Gets file name.
+	 *
+	 * @param path the path
+	 * @return the file name
+	 */
 	public static String getFileName(String path) {
 		
 		//path = "D:\\Miscellaneous\\Durgapur Govt Collage.pdf";

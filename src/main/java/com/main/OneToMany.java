@@ -17,6 +17,7 @@ import de.redsix.pdfcompare.CompareResult;
 import de.redsix.pdfcompare.PdfComparator;
 
 /**
+ * The type One to many.
  *
  * @author dasab
  */
@@ -369,6 +370,8 @@ public class OneToMany extends javax.swing.JFrame {
 	}//GEN-LAST:event_CompareActionPerformed
 
 	/**
+	 * Main.
+	 *
 	 * @param args the command line arguments
 	 */
 	public static void main(String args[]) {

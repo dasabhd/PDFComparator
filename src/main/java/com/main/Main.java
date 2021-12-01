@@ -8,6 +8,7 @@ package com.main;
 import javax.swing.ImageIcon;
 
 /**
+ * The type Main.
  *
  * @author dasab
  */
@@ -154,6 +155,8 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_button1ActionPerformed
 
     /**
+     * Main.
+     *
      * @param args the command line arguments
      */
     public static void main(String args[]) {

@@ -17,6 +17,7 @@ import javax.swing.JFileChooser;
 import com.utilities.GetFileName;
 
 /**
+ * The type One to one.
  *
  * @author Abhishek Das
  */
@@ -372,6 +373,8 @@ public class OneToOne extends javax.swing.JFrame {
     }//GEN-LAST:event_Browse4ActionPerformed
 
     /**
+     * Main.
+     *
      * @param args the command line arguments
      */
     public static void main(String args[]) {
